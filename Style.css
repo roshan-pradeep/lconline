@@ -141,7 +141,7 @@ body {
 /* Hero Section */
 .hero-section {
     min-height: 100vh; /* උස auto අරගන්නවා screen එකට අනුව */
-    background-image: url('assets/IMG/your-photo.jpeg'); /* පින්තූරයේ path එක */
+    background-image: url('web-background2 .jpeg'); /* පින්තූරයේ path එක */
     background-size: cover;       /* මේක තමයි වැදගත්ම - ඇදෙන්නේ නැතුව කපලා ගන්නවා */
     background-position: center;  /* පින්තූරයේ මැද හරිය පේන්න ගන්නවා */
     background-repeat: no-repeat; /* Repeat වෙන්න දෙන්නේ නැහැ */
@@ -553,6 +553,7 @@ body, html {
         margin-bottom: 20px;
     }
 }
+
 
 
 
