@@ -142,6 +142,11 @@ body {
 
 /* Hero Section */
 .hero-section {
+    height: 100vh; /* Phone එකේ screen එකේ උසටම ගන්න */
+    background-image: url('assets/IMG/your-photo.jpeg'); /* පින්තූරයේ path එක */
+    background-size: cover;      /* මේකෙන් තමයි ඇදෙන එක නවත්වන්නේ */
+    background-position: center; /* පින්තූරයේ මැද හරිය පේන්න ගන්නවා */
+    background-repeat: no-repeat;
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -536,4 +541,5 @@ body, html {
         display: block;
         margin: 0 auto; /* මැදට ගන්න */
     }
+
 }
