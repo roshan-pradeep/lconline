@@ -1,0 +1,286 @@
+<html lang="en">
+   <head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    @media only screen and (max-width: 600px) {
+    /* මුළු පිටුවම අයිනට ඇදෙන එක නවත්වන්න */
+    body {
+        overflow-x: hidden; 
+        width: 100%;
+    }
+
+    .content-wrapper {
+        width: 90% !important; /* Forces the width */
+        max-width: 100vw;      /* Screen එකෙන් එළියට යන්න දෙන්නේ නැහැ */
+        margin: 20px auto;
+        position: static;
+        box-sizing: border-box; /* Padding නිසා පිට පනින එක නවත්වනවා */
+    }
+
+    /* ඇතුළේ තියෙන පින්තූර කැපෙනවා නම් මේක දාන්න */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 22px;
+        word-wrap: break-word; /* දිග වචන තිබ්බොත් කැඩෙන්න */
+    }
+
+    .language-switcher {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Buttons අතර ඉඩ තියන්න */
+        justify-content: center;
+    }
+}
+</style>
+
+
+
+<link rel="stylesheet" href="assets/CSS/Style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+
+<meta charset="UTF-8">
+    
+    <title>LC ONLINE</title>
+    <style>
+        body { font-family: sans-serif; padding: 50px; text-align: center; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; border-radius: 5px; border: 1px solid #ccc; }
+        button:hover { background-color: #f0f0f0; }
+    </style>
+
+
+<style>
+        /* CSS tika Head tag eka athule thiyenna ona */
+        .nav-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff; /* Nil paata button ekak */
+            color: white !important; /* Text eka white wenna */
+            text-decoration: none;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-btn:hover {
+            background-color: #0056b3;
+
+        }
+
+
+
+        
+    </style>
+
+<style>
+  a img {
+    transition: transform 0.3s ease;
+  }
+  
+  a img:hover {
+    transform: scale(1.05); /* Mouse eka giyahama poddak loku wenawa */
+    cursor: pointer;
+  }
+</style>
+
+
+
+
+<style>
+  .map-container {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 0 20px;
+  }
+
+  .map-container iframe {
+    border-radius: 15px; /* Map eke moola roun karanna */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+</style>
+
+
+   </head>
+
+  <body>
+
+<nav class="simple-nav">
+    
+    <a href="https://wa.me/94771234567" class="whatsapp-nav" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp </a>
+</nav>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- navigation bar eka hadana widiha meka body eke udatama danna one -->
+
+
+
+<style>
+  /* Navigation bar එක ලොකු කරන්න සහ පිළිවෙලක් කරන්න */
+  .simple-nav {
+    padding: 5px;         /* උඩ යට ඉඩ ලොකු කරනවා */
+    text-align: left;    /* Links මැදට ගන්නවා */
+    background-color: #f8f9fa; /* ඕන නම් පසුබිම් පාටක් දෙන්න */
+  }
+
+  /* ඒ ඇතුළේ තියෙන Links (Home, About, Contact) ලොකු කරන්න */
+  .simple-nav a {
+    font-size: 20px;       /* අකුරු වල ප්‍රමාණය */
+    text-decoration: none; /* යටින් ඉරක් එන එක නවත්තන්න */
+    color: #333;           /* අකුරු වල පාට */
+    padding: 10px 20px;    /* ලින්ක් එක වටේට ඉඩ (Clickable area එක වැඩි වෙනවා) */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  /* මවුස් එක ලින්ක් එක උඩට ගියාම වෙනස් වෙන්න */
+  .simple-nav a:hover {
+    color: #25d366;       /* WhatsApp පාටටම ලින්ක් එක වෙනස් වෙන්න */
+  }
+
+  /* කලින් මම කිව්වා වගේ h1 style එක වෙනස් කරන්න */
+  .content-title {
+    text-align: center;
+    margin-top: 30px;
+  }
+</style>
+
+
+
+
+
+
+      <!-- multilanguage karana widiha  hero section ekema form add kara -->
+
+    
+        <section class="hero-section">
+    <div class="language-switcher">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('si')">සිංහල</button>
+        <button onclick="changeLanguage('ta')">தமிழ்</button>
+    </div>
+
+    <div class="hero-content">
+        <h1 data-key="main_title">Welcome to LC ONLINE</h1>
+        <p data-key="sub_text">Dialog TV / Dialog Broadband / ViU Mini Installation & Accessories</p>
+        <button class="main-btn" onclick="openForm()">Contact Us</button>
+    </div>
+</section>
+
+<div id="formOverlay" class="form-overlay">
+    <div class="form-box">
+        <span class="close-btn" onclick="closeForm()">&times;</span>
+        <h2 style="text-align: center; margin-bottom: 15px;">Contact Us</h2>
+        
+        <input type="text" id="userName" placeholder="Your Name" required>
+        <input type="tel" id="userPhone" placeholder="Phone Number (WhatsApp)" required>
+          <select id="userService">
+            <option value="" disabled selected>Select Service</option>
+            <option value="Dialog TV">Dialog TV</option>
+            <option value="Dialog Broadband">Dialog Broadband</option>
+            <option value="ViU Mini">ViU Mini</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <textarea id="userMessage" placeholder="Your Message" rows="4"></textarea>
+        
+        <button type="button" class="submit-btn" onclick="sendToWhatsApp()">Send via WhatsApp</button>
+    </div>
+</div>
+
+    <script src="assets/JS/main.js"></script>
+
+
+    
+     
+
+
+
+
+
+
+    <style>
+    .review-container {
+        text-align: center;
+        padding: 50px 20px;
+        font-family: sans-serif;
+    }
+
+    .review-card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 500px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .stars {
+        color: #f1c40f; /* Gold color එක */
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .review-card h4 {
+        margin-top: 10px;
+        color: #555;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- photo add -->
+<div class="photo-container">
+  <a href="dtv.html"><img src="/assets/IMG/DTV.png" alt="DTV"></a>
+  <a href="Home-Broadband.html"><img src="/assets/IMG/Dialog-HomeBrodband.jpeg" alt="Broadband"></a>
+  <a href="Dialog-ViUMini.html"><img src="/assets/IMG/Dialog-ViuMini.png" alt="Viu Mini"></a>
+  <a href="accessories.html"><img src="/assets/IMG/Accessories.jpg" alt="Accessories"></a>
+  <a href="outdoorunit.html"><img src="/assets/IMG/outdoor.png" alt="Outdoor"></a>
+</div>
+
+
+
+
+  </body>
+
+</html>

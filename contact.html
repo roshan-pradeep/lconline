@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher</title>
+    <style>
+        body { font-family: sans-serif; padding: 50px; text-align: center; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; border-radius: 5px; border: 1px solid #ccc; }
+        button:hover { background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+
+    <div>
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('si')">සිංහල</button>
+        <button onclick="changeLanguage('ta')">தமிழ்</button>
+    </div>
+
+    <hr>
+
+    <h1 data-key="main_title">Welcome!</h1>
+    <p data-key="sub_text">Select a language to change this text.</p>
+
+    <script>
+        const translations = {
+            'en': {
+                'main_title': 'Welcome!',
+                'sub_text': 'Select a language to change this text.'
+            },
+            'si': {
+                'main_title': 'සාදරයෙන් පිළිගන්නවා!',
+                'sub_text': 'මෙම වැකිය වෙනස් කිරීමට භාෂාවක් තෝරන්න.'
+            },
+            'ta': {
+                'main_title': 'வரவேற்கிறோம்!',
+                'sub_text': 'இந்த உரையை மாற்ற ஒரு மொழியைத் தேர்ந்தெடுக்கவும்.'
+            }
+        };
+
+        function changeLanguage(lang) {
+            console.log("Selected Language: " + lang); // Meeka browser console eke check karanna puluwan
+
+            // data-key thiyena hama element ekakma gannawa
+            const elements = document.querySelectorAll('[data-key]');
+            
+            elements.forEach(element => {
+                const key = element.getAttribute('data-key');
+                
+                // Check karanawa translation object eke me key eka thiyeda kiyala
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
