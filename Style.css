@@ -535,3 +535,24 @@ body, html {
 }
 
 
+
+/* Phone එකට විතරක් බලපාන CSS */
+@media screen and (max-width: 600px) {
+    .photo-container {
+        position: static !important; /* Absolute එක අයින් කරනවා */
+        padding: 20px !important;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column; /* පින්තූර එක යට එක වැටෙන්න */
+        align-items: center;
+    }
+
+    .photo-container img {
+        width: 90% !important; /* Phone screen එකේ පළලට අනුව පින්තූරය හැදෙනවා */
+        height: auto !important; /* උස නිකන්ම හැදෙනවා (ඇදෙන්නේ නැහැ) */
+        margin-bottom: 20px;
+    }
+}
+
+
+
