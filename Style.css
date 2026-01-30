@@ -142,21 +142,13 @@ body {
 
 /* Hero Section */
 .hero-section {
-    height: 100vh; /* Phone එකේ screen එකේ උසටම ගන්න */
+    min-height: 100vh; /* උස auto අරගන්නවා screen එකට අනුව */
     background-image: url('assets/IMG/your-photo.jpeg'); /* පින්තූරයේ path එක */
-    background-size: cover;      /* මේකෙන් තමයි ඇදෙන එක නවත්වන්නේ */
-    background-position: center; /* පින්තූරයේ මැද හරිය පේන්න ගන්නවා */
-    background-repeat: no-repeat;
-    position: relative;
+    background-size: cover;       /* මේක තමයි වැදගත්ම - ඇදෙන්නේ නැතුව කපලා ගන්නවා */
+    background-position: center;  /* පින්තූරයේ මැද හරිය පේන්න ගන්නවා */
+    background-repeat: no-repeat; /* Repeat වෙන්න දෙන්නේ නැහැ */
+    background-attachment: scroll; /* Phone වලට attachment: fixed දැම්මොත් තමයි ඇදෙන්නේ */
     width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('your-image.jpg') no-repeat center center/cover;
-    background-color: #1a1a1a; /* Image eka naththan pena color eka */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
 }
 
 .hero-content h1 {
@@ -543,3 +535,4 @@ body, html {
     }
 
 }
+
