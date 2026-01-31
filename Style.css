@@ -61,7 +61,7 @@ body {
 /* Hero Content eke thiyena Paragraph (p) eka */
 .hero-content p {
     position: absolute;
-  top: 40%;   /* Udadi idan 20% k pahalata */
+  top: 60%;   /* Udadi idan 20% k pahalata */
   left: 10%;  /* Wam patthe idan 10% k dakunata */
   /* Oyata ona ganan dila balance karaganna */
   font-size: 1.2rem;         /* Akuru size eka */
@@ -507,5 +507,6 @@ body {
     padding: 10px 10%; /* Image ekak nisa padding poddak adu kara */
 
 }
+
 
 
