@@ -513,8 +513,8 @@ body {
 /* ඕනෑම තැනක පාවිච්චි කළ හැකි Gallery Style එක */
 /* පින්තූර වල පොදු පෙනුම */
 .movable-photo {
-    width: 180px;
-    height: 180px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -524,7 +524,7 @@ body {
 
 /* --- Desktop/Laptop සඳහා Positions --- */
 @media (min-width: 769px) {
-    #photo1 { top: 50px; left: 100px; }
+    #photo1 { top: 250px; left: 100px; }
     #photo2 { top: 50px; right: 50px; }
     #photo3 { top: 300px; left: 150px; } /* bottom වෙනුවට top දාන එක ලේසියි */
     #photo4 { top: 300px; right: 150px; }
@@ -544,6 +544,7 @@ body {
         bottom: 0 !important;
     }
 }
+
 
 
 
