@@ -323,8 +323,8 @@ body {
 
 .whatsapp-float {
     position: fixed;
-    bottom: 800px;      /* පල්ලෙහා ඉඳන් තියෙන දුර */
-    right: 500px;       /* දකුණු පැත්තේ ඉඳන් තියෙන දුර */
+    bottom: 20px;      /* පල්ලෙහා ඉඳන් තියෙන දුර */
+    right: 20px;       /* දකුණු පැත්තේ ඉඳන් තියෙන දුර */
     background-color: #25d366; /* WhatsApp කොළ පාට */
     color: white;
     padding: 12px 20px;
@@ -392,7 +392,7 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky; /* Scroll karaddi uda nawathila thiyenna */
     top: 0;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .nav-links li a.active {
@@ -520,6 +520,7 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     position: absolute;
     transition: 0.3s;
+    z-index: 5;
 }
 
 /* --- Desktop/Laptop සඳහා Positions --- */
@@ -593,6 +594,16 @@ body {
         font-size: 1rem;     /* Phone එකට ගැලපෙන කුඩා අකුරු */
     }
 }
+
+@media (max-width: 768px) {
+    .hero-content h1, .hero-content p {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        margin: 10px auto;
+    }
+}
+
 
 
 
