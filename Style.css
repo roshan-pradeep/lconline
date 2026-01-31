@@ -367,19 +367,18 @@ body {
 
 /* sub page walata hero section dana widiha */
 .sub-page-hero {
-    /* Background photo එක මෙතනින් දාන්න */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('about-bg.jpg');
-    
-    /* Photo එක හරියටම screen එකට සෙට් වෙන්න මේ ටික ඕනෑමයි */
-    background-size: cover;       /* Photo එක box එක පිරෙන්නම ලොකු කරනවා */
-    background-position: center;   /* Photo එකේ මැද පේන්න තියනවා */
-    background-repeat: no-repeat;  /* Photo එක repeat වෙන්නේ නැහැ */
-    
-    /* Height එක (අවශ්‍ය නම් විතරක් වෙනස් කරන්න) */
-    height: 40vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;  /* ඇතුළේ තියෙන දේවල් මේකට සාපේක්ෂව පාලනය කරයි */
+    width: 100%;         /* මුළු screen එකේම පළල ගනී */
+    height: 10vh;        /* screen එකේ උසින් 80% ක් උස ලබා දෙයි */
+    min-height: 100px;   /* අඩුම උස 400px ලෙස තබයි */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../IMG/hero-bg.jpg'); /* පින්තූරය උඩින් කළු පාට ලේයර් එකක් දමයි */
+    background-size: cover; /* පින්තූරය screen එකට හරියටම fit කරයි */
+    background-position: center; /* පින්තූරයේ මැද කොටස පෙන්වයි */
+    display: flex;       /* අකුරු සහ බටන් පෙළගස්වන්න උදව් වෙයි */
+    justify-content: center; /* ඔක්කොම තිරස් අතට මැදට (Horizontal Center) කරයි */
+    align-items: center; /* ඔක්කොම සිරස් අතට මැදට (Vertical Center) කරයි */
+    text-align: center;  /* අකුරු මැදට පෙළගස්වයි */
+    color: white;        /* අකුරු වල පාට සුදු කරයි */
 }
 
 
@@ -608,3 +607,4 @@ body {
         margin: 10px auto;
     }
 }
+
