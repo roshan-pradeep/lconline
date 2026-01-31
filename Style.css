@@ -518,21 +518,32 @@ body {
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    position: absolute; /* මේක වැදගත්: මේකෙන් තමයි ඕන තැනකට ගෙනියන්න දෙන්නේ */
+    position: absolute;
     transition: 0.3s;
 }
 
-.movable-photo:hover {
-    transform: scale(1.1);
-    z-index: 10; /* Hover කරද්දී පින්තූරය අනිත් ඒවට වඩා උඩින් පේන්න */
+/* --- Desktop/Laptop සඳහා Positions --- */
+@media (min-width: 769px) {
+    #photo1 { top: 50px; left: 100px; }
+    #photo2 { top: 50px; right: 50px; }
+    #photo3 { top: 300px; left: 150px; } /* bottom වෙනුවට top දාන එක ලේසියි */
+    #photo4 { top: 300px; right: 150px; }
 }
 
-/* එක එක පින්තූරයට අදාළ තැන් (Positions) */
-#photo1 { top: 50px; left: 100px; }
-#photo2 { top: 50px; right: 50px; }
-#photo3 { bottom: 50px; left: 200px; }
-#photo4 { bottom: 50px; right: 150px; }
-
+/* --- Mobile (Phone) සඳහා Positions --- */
+@media (max-width: 768px) {
+    .movable-photo {
+        width: 140px;  /* Phone එකේදී පින්තූරේ පොඩ්ඩක් කුඩා කළා */
+        height: 140px;
+        position: relative; /* Mobile වලදී එක පෙළට එන්න මෙහෙම කිරීම හොඳයි */
+        display: block;
+        margin: 20px auto;  /* මැදට ගේන්න */
+        top: 0 !important;   /* කලින් දුන්න position අයින් කරන්න */
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+    }
+}
 
 
 
