@@ -1,0 +1,508 @@
+/* --- මූලික සැකසුම් (Basic Reset) --- */
+* {
+    margin: 0;           /* element එක වටේ තියෙන පිටත ඉඩ අයින් කරයි */
+    padding: 0;          /* element එක ඇතුළේ තියෙන ඇතුළු ඉඩ අයින් කරයි */
+    box-sizing: border-box; /* border එක දැම්මම element එකේ පළල වෙනස් නොවී තියාගනී */
+    font-family: 'Segoe UI', Arial, sans-serif; /* අකුරු වර්ගය (Font) තෝරයි */
+}
+
+body {
+    overflow-x: hidden;  /* වෙබ් එක දකුණු පැත්තට ඇදෙන එක (Scroll වෙන එක) නවත්වයි */
+    background-color: #f4f4f4; /* මුළු පිටුවේම පසුබිම් පාට තීරණය කරයි */
+}
+
+/* --- උඩම තියෙන බාර් එක (Top Navigation) --- */
+.simple-nav {
+    padding: 15px;       /* බාර් එකේ උස සහ දෙපැත්තේ ඉඩ තීරණය කරයි */
+    background-color: #fff; /* බාර් එකේ පාට සුදු කරයි */
+    border-bottom: 1px solid #ddd; /* යටින් සිහින් ඉරක් දමයි */
+}
+
+.simple-nav a {
+    font-size: 18px;     /* WhatsApp ලින්ක් එකේ අකුරු වල විශාලත්වය */
+    text-decoration: none; /* ලින්ක් එක යටින් එන ඉර අයින් කරයි */
+    color: #25d366;      /* WhatsApp වලට අදාළ කොළ පාට ලබා දෙයි */
+    font-weight: bold;   /* අකුරු තද (Bold) කරයි */
+    display: flex;       /* icon එක සහ අකුරු පෙළට තියයි */
+    align-items: center; /* icon එක සහ අකුරු උසින් මැදට (Center) කරයි */
+    gap: 10px;           /* icon එක සහ අකුරු අතර පරතරය තබයි */
+}
+
+/* --- ප්‍රධාන කොටස (Hero Section) --- */
+.hero-section {
+    position: relative;  /* ඇතුළේ තියෙන දේවල් මේකට සාපේක්ෂව පාලනය කරයි */
+    width: 100%;         /* මුළු screen එකේම පළල ගනී */
+    height: 50vh;        /* screen එකේ උසින් 80% ක් උස ලබා දෙයි */
+    min-height: 400px;   /* අඩුම උස 400px ලෙස තබයි */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../IMG/hero-bg.jpg'); /* පින්තූරය උඩින් කළු පාට ලේයර් එකක් දමයි */
+    background-size: cover; /* පින්තූරය screen එකට හරියටම fit කරයි */
+    background-position: center; /* පින්තූරයේ මැද කොටස පෙන්වයි */
+    display: flex;       /* අකුරු සහ බටන් පෙළගස්වන්න උදව් වෙයි */
+    justify-content: center; /* ඔක්කොම තිරස් අතට මැදට (Horizontal Center) කරයි */
+    align-items: center; /* ඔක්කොම සිරස් අතට මැදට (Vertical Center) කරයි */
+    text-align: center;  /* අකුරු මැදට පෙළගස්වයි */
+    color: white;        /* අකුරු වල පාට සුදු කරයි */
+}
+
+
+/* Hero Content eke thiyena Main Heading (h1) eka */
+.hero-content h1 {
+  position: absolute;
+  top: 20%;   /* Udadi idan 20% k pahalata */
+  left: 30%;  /* Wam patthe idan 10% k dakunata */
+  /* Oyata ona ganan dila balance karaganna */
+  font-size: 3.5rem;          /* Akuru loku karanna */
+  font-family: 'Arial', sans-serif; /* Font style eka wenas karanna */
+  margin-bottom: 20px;       /* Paragraph ekath ekka thiyena ida */
+  font-weight: bold;         /* Akuru thada karanna */
+  color: #ffffff;            /* Paata wenas karanna */
+}
+
+/* Hero Content eke thiyena Paragraph (p) eka */
+.hero-content p {
+    position: absolute;
+  top: 20%;   /* Udadi idan 20% k pahalata */
+  left: 10%;  /* Wam patthe idan 10% k dakunata */
+  /* Oyata ona ganan dila balance karaganna */
+  font-size: 1.2rem;         /* Akuru size eka */
+  line-height: 1.6;          /* Pelawal athara ida (pahasuwen kiyawanna) */
+  margin-bottom: 30px;       /* Button ekath ekka thiyena ida */
+  max-width: 600px;          /* Akuru pela godak diga wenna nodi thiyaganna */
+  margin-left: auto;         /* Center karaganna ona nam (text-align center nam) */
+  margin-right: auto;
+}
+
+/* --- CONTACT BUTTON (සයිස් එක පාලනය කරන තැන) --- */
+.main-btn {
+    margin-top: 20px;    /* අකුරු වලට යටින් බොත්තමට ඉඩක් ලබා දෙයි */
+    padding: 8px 20px;   /* (උස, පළල) බොත්තමේ සයිස් එක මෙතනින් පොඩි/ලොකු කළ හැක */
+    font-size: 15px;     /* බොත්තමේ අකුරු වල ප්‍රමාණය */
+    background-color: #007bff; /* බොත්තමේ පාට (නිල්) */
+    color: white;        /* බොත්තමේ අකුරු වල පාට */
+    border: none;        /* වටේට තියෙන default border එක අයින් කරයි */
+    border-radius: 5px;  /* කොන් හතර පොඩ්ඩක් රවුම් කරයි */
+    cursor: pointer;     /* මවුස් එක ගෙනිච්චම අතක සලකුණ පෙන්වයි */
+    font-weight: bold;   /* අකුරු තද කරයි */
+    transition: 0.3s;    /* වෙනස්කම් සිදුවෙද්දී smooth ලෙස සිදුවීමට උදව් වෙයි */
+}
+
+.main-btn:hover {
+    background-color: #0056b3; /* මවුස් එක ගෙනිච්චම නිල් පාට තද කරයි */
+}
+
+/* --- භාෂා මාරු කරන බටන් (Language Switcher) --- */
+/* Desktop එකේදී */
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    display: flex;
+    gap: 5px; /* පරතරය පොඩ්ඩක් අඩු කළා බොත්තම් 3ක් නිසා */
+    z-index: 1001;
+}
+
+.language-switcher button {
+    padding: 4px 10px;
+    font-size: 11px;
+    cursor: pointer;
+    border: 1px solid #25D366;
+    background: white;
+    color: #333;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s;
+    white-space: nowrap; /* අකුරු පේළි දෙකකට කැඩෙන එක වළක්වන්න */
+}
+
+.language-switcher button:hover {
+    background: #25D366;
+    color: white;
+}
+
+/* Mobile එකේදී */
+@media (max-width: 768px) {
+    .language-switcher {
+        position: relative;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        padding: 10px 0;
+        background: #f8f8f8;
+        width: 100%;
+        gap: 8px;
+    }
+    
+    .language-switcher button {
+        font-size: 10px; /* Mobile එකේදී අකුරු තවත් පොඩ්ඩක් කුඩා කළා */
+        padding: 5px 8px;
+    }
+}
+
+
+
+/* --- ෆොටෝ තියෙන කොටස (Photo Container) --- */
+.photo-container {
+    display: flex;       /* පින්තූර පෙළට තියන්න උදව් වෙයි */
+    flex-wrap: wrap;     /* ඉඩ මදි නම් පින්තූර පල්ලෙහාට එවයි (Mobile වලට වැදගත්) */
+    justify-content: center; /* පින්තූර ටික මැදට කරයි */
+    gap: 20px;           /* පින්තූර අතර පරතරය */
+    padding: 50px 20px;  /* උඩින් සහ දෙපැත්තෙන් ඉඩ තබයි */
+}
+
+.photo-container img {
+    width: 180px;        /* පින්තූරයක පළල */
+    height: 180px;       /* පින්තූරයක උස */
+    object-fit: cover;   /* පින්තූරය කොටුව ඇතුළේ ඇදෙන්නේ නැතුව ලස්සනට පෙන්වයි */
+    border-radius: 15px; /* පින්තූරයේ කොන් රවුම් කරයි */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* පින්තූරයට යටින් ලස්සන හෙවනැල්ලක් (Shadow) දමයි */
+    transition: 0.3s;    /* Mouse එක ගෙනිච්චම සිදුවන වෙනස smooth කරයි */
+}
+
+.photo-container img:hover {
+    transform: scale(1.08); /* Mouse එක ගෙනිච්චම පින්තූරය පොඩ්ඩක් ලොකු වෙයි */
+}
+
+
+
+
+
+/* --- Mobile Responsive (පෝන් එකේදී සිදුවන වෙනස්කම්) --- */
+@media (max-width: 768px) {
+  
+  .hero-content h1 {
+    font-size: 2rem;       /* Desktop ekata wada akuru podi kara */
+    margin-bottom: 15px;
+  }
+
+  .hero-content p {
+    font-size: 1rem;       /* Paragraph eka kiyawanna lesi size ekakata gaththa */
+    padding: 0 20px;       /* Phone eke deppaththen ida poddak thiyaganna */
+  }
+
+  .hero-section {
+    padding: 20px;         /* Mulu section ekema ida poddak adu kara */
+  }
+
+
+    .photo-container img { 
+        width: 140px;    /* පෝන් එකට ගැලපෙන්න පින්තූර පොඩි කරයි */
+        height: 140px; 
+    }
+    .main-btn { 
+        padding: 6px 15px; /* පෝන් එකේදී ප්‍රධාන බොත්තම තවත් පොඩි කරයි */
+        font-size: 14px; 
+    }
+    .language-switcher {
+        top: 10px;    /* Mobile wala poddak uda karanna */
+        right: 10px;
+        gap: 5px;     /* Ida poddak adu karanna */
+    }
+    
+    .language-switcher button {
+        padding: 4px 8px; /* Button podi karanna */
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+
+/* form eka load wena widiha */
+
+/* Mulu screen ekama wahana layer eka */
+.form-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Background eka blurred look ekakata */
+    backdrop-filter: blur(5px);    /* Pitupasa thiyena ewa blur wenawa lassanata */
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Mobile wala screen eke gawa gawinnema nathi wenna */
+}
+
+/* Form eka thiyena box eka */
+.form-box {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px; /* Desktop ekedi loku wadi wenne na */
+    padding: 30px;
+    border-radius: 20px; /* Corners round karala lassanata */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: slideUp 0.3s ease-out; /* Enakota lassanata pahala idan uda eyi */
+}
+
+
+/* Form eka ena animation eka */
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Form Title & Subtitle */
+.form-box h2 {
+    margin: 0;
+    color: #333;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.form-subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Input Group styling */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-box input, 
+.form-box select, 
+.form-box textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+    background: #f9f9f9;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.form-box input:focus, .form-box select:focus, .form-box textarea:focus {
+    border-color: #25D366;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(37, 211, 102, 0.2);
+}
+
+/* Button Finishing */
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Close Button Position */
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+    line-height: 1;
+}
+
+
+
+/* index eke whatasapp button eka thiyana yhana */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 800px;      /* පල්ලෙහා ඉඳන් තියෙන දුර */
+    right: 500px;       /* දකුණු පැත්තේ ඉඳන් තියෙන දුර */
+    background-color: #25d366; /* WhatsApp කොළ පාට */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px; /* දෙපැත්ත රවුම් වෙන්න */
+    display: flex;
+    align-items: center;
+    gap: 10px;         /* Icon එකයි Text එකයි අතර පරතරය */
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.2);
+    z-index: 9999;     /* හැමදේටම උඩින් තියාගන්න */
+    transition: 0.3s ease;
+}
+
+.whatsapp-float i {
+    font-size: 24px;   /* Icon එකේ size එක */
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e; /* Hover කරද්දී තද කොළ පාට වෙනවා */
+    transform: scale(1.05);    /* පොඩ්ඩක් ලොකු වෙනවා */
+}
+
+/* Mobile වලදී Text එක අයින් කරලා Icon එක විතරක් පෙන්නන්න ඕනේ නම් */
+@media (max-width: 480px) {
+    .whatsapp-float span {
+        display: none; /* Text එක හංගනවා */
+    }
+    .whatsapp-float {
+        padding: 15px;
+        border-radius: 50%; /* බටන් එක රවුම් කරනවා */
+    }
+}
+
+
+
+/* sub page walata hero section dana widiha */
+.sub-page-hero {
+    /* Background photo එක මෙතනින් දාන්න */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('about-bg.jpg');
+    
+    /* Photo එක හරියටම screen එකට සෙට් වෙන්න මේ ටික ඕනෑමයි */
+    background-size: cover;       /* Photo එක box එක පිරෙන්නම ලොකු කරනවා */
+    background-position: center;   /* Photo එකේ මැද පේන්න තියනවා */
+    background-repeat: no-repeat;  /* Photo එක repeat වෙන්නේ නැහැ */
+    
+    /* Height එක (අවශ්‍ය නම් විතරක් වෙනස් කරන්න) */
+    height: 40vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* navigation bar eka aluth */
+
+/* Navigation Bar Style */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky; /* Scroll karaddi uda nawathila thiyenna */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links li a.active {
+    color: #25D366;
+    font-weight: bold;
+}
+.nav-links li a.active::after {
+    width: 100%;
+}
+
+/* Logo Style */
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #25D366; /* WhatsApp paatama gaththa theme ekata */
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+
+/* Hover Effect - Underline Animation */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #25D366;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #25D366;
+}
+
+.nav-links li a:hover::after {
+    width: 100%; /* Hover weddi yatin ira lassanata addenawa */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    /* Nav bar eka madata ganna */
+    .main-nav {
+        flex-direction: column; 
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    /* Logo eka madata ganna */
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav-logo {
+        height: 40px; /* Mobile eke logo eka poddak podi kara */
+    }
+
+    /* Links tika row ekaka thiyenna hira wenawa nam, ekak yata ekak danna */
+    .nav-links {
+        flex-direction: row; /* Row ekata thiyeddi hira wenawa nam 'column' karanna */
+        flex-wrap: wrap;    /* Screen eka madi unoth yata row ekata auto yanawa */
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .nav-links li a {
+        font-size: 14px; /* Akuru poddak podi kara */
+    }
+}
+
+
+
+/* nav logo size chanage */
+
+/* Logo image eke size eka palanaya karanna */
+.nav-logo {
+    height: 100px;    /* Oyata ona height ekak danna (40px-60px athara hodayi) */
+    width: auto;     /* Height ekata anuwa width eka auto hadenawa */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Mouse eka genichchama podi effect ekak (optional) */
+.nav-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Nav bar eke spacing poddak adjust karamu */
+.main-nav {
+    padding: 10px 10%; /* Image ekak nisa padding poddak adu kara */
+}

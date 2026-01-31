@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LC ONLINE</title>
+    
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+</head>
+<body>
+
+    <!-- nav eka aluthin with logo-->
+
+    <nav class="main-nav">
+    <div class="logo">
+        <a href="index.html">
+            <img src="my-logo.png" alt="LC Online Logo" class="nav-logo">
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    
+
+    <section class="hero-section">
+        <div class="language-switcher">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('si')">සිංහල</button>
+            <button onclick="changeLanguage('ta')">தமிழ்</button>
+        </div>
+
+        <div class="hero-content">
+            <h1 data-key="main_title">Welcome Lc Online</h1>
+            <p data-key="sub_text">Dialog TV / Dialog Broadband / ViU Mini Installation & Accessories</p>
+            <button class="main-btn" onclick="openForm()">Contact Us</button>
+        </div>
+    </section>
+
+    <div class="photo-container">
+        <a href="dtv.html"><img src="assets/IMG/DTV.png" alt="DTV"></a>
+        <a href="Home-Broadband.html"><img src="assets/IMG/Dialog-HomeBrodband.jpeg" alt="Broadband"></a>
+        <a href="Dialog-ViUMini.html"><img src="assets/IMG/Dialog-ViuMini.png" alt="Viu Mini"></a>
+        <a href="accessories.html"><img src="assets/IMG/Accessories.jpg" alt="Accessories"></a>
+        <a href="outdoorunit.html"><img src="assets/IMG/outdoor.png" alt="Outdoor"></a>
+    </div>
+
+    <div id="formOverlay" class="form-overlay">
+    <div class="form-box">
+        <span class="close-btn" onclick="closeForm()">&times;</span>
+        <h2>Contact Us</h2>
+        <p class="form-subtitle">We will get back to you soon!</p> <div class="input-group">
+            <input type="text" id="userName" placeholder="Your Name" required>
+        </div>
+        
+        <div class="input-group">
+            <input type="tel" id="userPhone" placeholder="Phone Number (WhatsApp)" required>
+        </div>
+
+        <div class="input-group">
+            <select id="userService">
+                <option value="" disabled selected>Select Service</option>
+                <option value="Dialog TV">Dialog TV</option>
+                <option value="Dialog Broadband">Dialog Broadband</option>
+                <option value="ViU Mini">ViU Mini</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <textarea id="userMessage" placeholder="Your Message" rows="4"></textarea>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="sendToWhatsApp()">
+            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+        </button>
+    </div>
+</div>
+
+    <script src="assets/JS/main.js"></script>
+<!-- whatsapp button eka
+  -->
+    <a href="https://wa.me/94771234567" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat with us</span> </a>
+
+</body>
+</html>
