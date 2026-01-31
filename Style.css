@@ -1,192 +1,120 @@
-/* --- මූලික සැකසුම් (Basic Reset) --- */
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    overflow-x: hidden;
-    background-color: #f4f4f4;
-}
-
-/* --- NAVIGATION BAR (දැන් මේක Mobile වලටත් perfect) --- */
+/* --- Navigation Style --- */
 .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%; /* Desktop එකේදී දෙපැත්තෙන් ලස්සනට ඉඩ තබයි */
-    background-color: #ffffff;
+    padding: 10px 5%;
+    background: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
-    z-index: 2000; /* අනිත් හැමදේටම උඩින් තියාගන්න */
-}
-
-/* Logo Fix */
-.logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    z-index: 1000;
 }
 
 .nav-logo {
-    height: 50px; /* Logo එක පේන්න ඕන ප්‍රමාණය මෙතනින් හදන්න (කලින් 6px තිබ්බේ) */
+    height: 45px; /* Logo එකේ Size එක */
     width: auto;
-    margin-right: 10px;
 }
 
-/* Nav Links */
 .nav-links {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 20px;
 }
 
 .nav-links li a {
     text-decoration: none;
-    color: #555;
+    color: #333;
+    font-size: 15px;
     font-weight: 500;
-    font-size: 16px;
-    transition: 0.3s;
 }
 
-.nav-links li a:hover, .nav-links li a.active {
+.nav-links li a.active {
     color: #25D366;
+    font-weight: bold;
 }
 
-/* --- LANGUAGE SWITCHER (මේක තමයි අතුරුදහන් වුණේ) --- */
+/* --- Language Switcher --- */
 .language-switcher {
     display: flex;
-    gap: 8px;
-    margin-left: 15px; /* Nav links වලින් පස්සේ ඉඩ තබයි */
+    gap: 5px;
 }
 
 .language-switcher button {
-    padding: 6px 12px;
-    font-size: 12px;
-    cursor: pointer;
+    padding: 5px 10px;
     border: 1px solid #25D366;
-    background: white;
-    color: #333;
+    background: #fff;
     border-radius: 4px;
-    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
     transition: 0.3s;
 }
 
 .language-switcher button:hover {
     background: #25D366;
-    color: white;
+    color: #fff;
 }
 
-/* --- HERO SECTION --- */
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 60vh; /* උස පොඩ්ඩක් වැඩි කළා පින්තූරේ පේන්න */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../IMG/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* --- Content Section --- */
+.content-container {
+    padding: 40px 10%;
     text-align: center;
-    color: white;
 }
 
-/* Hero Content Position Fix */
-.hero-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
+.main-title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.movable-photo {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 30px;
+.custom-p {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #555;
 }
 
-/* --- WHATSAPP FLOAT BUTTON --- */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    z-index: 9999;
-    box-shadow: 2px 5px 15px rgba(0,0,0,0.2);
-}
-
-/* --- MOBILE RESPONSIVE (Phone එකේදී ඔක්කොම පිළිවෙළට වෙන හැටි) --- */
+/* --- Mobile Responsive (උඹට ඕනෙම දේ!) --- */
 @media (max-width: 768px) {
     .main-nav {
-        flex-direction: column; /* එක යට එක එන්න හදනවා */
-        padding: 15px !important;
-        gap: 10px;
+        flex-direction: column; /* එක යට එක එනවා */
+        padding: 15px;
     }
 
     .nav-links {
+        margin: 15px 0;
         gap: 10px;
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* ඉඩ මදි නම් links පල්ලෙහාට එනවා */
         justify-content: center;
     }
 
-    .language-switcher {
-        margin-left: 0;
-        margin-top: 10px;
+    .nav-links li a {
+        font-size: 14px;
     }
 
-    .hero-content h1 {
+    .language-switcher {
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .main-title {
         font-size: 1.8rem;
     }
-
-    .hero-content p {
-        font-size: 1rem;
-        padding: 0 10px;
-    }
-
-    .movable-photo {
-        width: 140px;
-        height: 140px;
-        position: relative !important; /* Mobile එකේදී absolute අයින් කරනවා */
-        margin: 10px auto;
-        top: 0 !important;
-        left: 0 !important;
-    }
-
-    .custom-p {
-        position: relative !important;
-        width: 95%;
-        top: 0 !important;
-        left: 0 !important;
-        margin: 15px auto;
-    }
-}
-
-/* --- PHOTOS & CUSTOM CONTENT --- */
-.photo-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px 20px;
-}
-
-.photo-container img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
