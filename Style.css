@@ -17,7 +17,7 @@ body {
 /* --- උඩම තියෙන බාර් එක (Top Navigation) --- */
 .simple-nav {
     padding: 15px;       /* බාර් එකේ උස සහ දෙපැත්තේ ඉඩ තීරණය කරයි */
-    background-color: #fff; /* බාර් එකේ පාට සුදු කරයි */
+    background-color: #fffdfd; /* බාර් එකේ පාට සුදු කරයි */
     border-bottom: 1px solid #ddd; /* යටින් සිහින් ඉරක් දමයි */
 }
 
@@ -97,7 +97,7 @@ body {
 /* Desktop එකේදී */
 .language-switcher {
     position: absolute;
-    top: 10px;
+    top: 30px;
     right: 5%;
     display: flex;
     gap: 5px; /* පරතරය පොඩ්ඩක් අඩු කළා බොත්තම් 3ක් නිසා */
@@ -184,6 +184,7 @@ body {
 
   .hero-section {
     padding: 20px;         /* Mulu section ekema ida poddak adu kara */
+     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/IMG/web-\ background1\ \(1\).jpg'); /* පින්තූරය උඩින් කළු පාට ලේයර් එකක් දමයි */
   }
 
 
@@ -367,11 +368,11 @@ body {
 
 /* sub page walata hero section dana widiha */
 .sub-page-hero {
-    position: relative;  /* ඇතුළේ තියෙන දේවල් මේකට සාපේක්ෂව පාලනය කරයි */
+   position: relative;  /* ඇතුළේ තියෙන දේවල් මේකට සාපේක්ෂව පාලනය කරයි */
     width: 100%;         /* මුළු screen එකේම පළල ගනී */
-    height: 10vh;        /* screen එකේ උසින් 80% ක් උස ලබා දෙයි */
+    height: 20vh;        /* screen එකේ උසින් 80% ක් උස ලබා දෙයි */
     min-height: 100px;   /* අඩුම උස 400px ලෙස තබයි */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../IMG/hero-bg.jpg'); /* පින්තූරය උඩින් කළු පාට ලේයර් එකක් දමයි */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/IMG/web-\ background2\ .jpg'); /* පින්තූරය උඩින් කළු පාට ලේයර් එකක් දමයි */
     background-size: cover; /* පින්තූරය screen එකට හරියටම fit කරයි */
     background-position: center; /* පින්තූරයේ මැද කොටස පෙන්වයි */
     display: flex;       /* අකුරු සහ බටන් පෙළගස්වන්න උදව් වෙයි */
@@ -390,10 +391,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background-color: #ffffff;
+    background-color: #f8f6f6;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky; /* Scroll karaddi uda nawathila thiyenna */
-    top: 0;
+    bottom: 70%;
     z-index: 9999;
 }
 
@@ -493,7 +494,7 @@ body {
 
 /* Logo image eke size eka palanaya karanna */
 .nav-logo {
-    height: 6px;    /* Oyata ona height ekak danna (40px-60px athara hodayi) */
+    height: 50px;    /* Oyata ona height ekak danna (40px-60px athara hodayi) */
     width: auto;     /* Height ekata anuwa width eka auto hadenawa */
     display: block;
     transition: transform 0.3s ease;
@@ -528,7 +529,7 @@ body {
 
 /* --- Desktop/Laptop සඳහා Positions --- */
 @media (min-width: 769px) {
-    #photo1 { top: 250px; left: 100px; }
+    #photo1 { top: 150px; left: 100px; }
     #photo2 { top: 50px; right: 50px; }
     #photo3 { top: 300px; left: 150px; } /* bottom වෙනුවට top දාන එක ලේසියි */
     #photo4 { top: 300px; right: 150px; }
@@ -568,34 +569,33 @@ body {
     /* h1 eke style eka methana danna */
     h1 {
         position: absolute;   /* Para wala widihatama position wenna */
-        top: 100px;          /* Uda idan thiyena dura */
-        left: 50%;           /* Screen eke madata ganna */
+        top: 80px;          /* Uda idan thiyena dura */
+        left: 60%;           /* Screen eke madata ganna */
         transform: translateX(-50%); /* Thaniyatama mada wenna meka danna */
         
         font-family: 'Poppins', sans-serif; /* Font style eka */
         font-size: 3.5rem;   /* Font size eka (hoda lokuwata) */
-        color: #333;         /* Dark grey wage color ekak */
+        color: #f7f5f5;         /* Dark grey wage color ekak */
         font-weight: 800;    /* Akuru thadiyata (bold) ganna */
     }
 
-    
     #para1 { 
-        top: 100px;      /* උඩ ඉඳන් දුර */
-        left: 50px;      /* වමේ ඉඳන් දුර */
+        top: 300px;      /* උඩ ඉඳන් දුර */
+        left: 200px;      /* වමේ ඉඳන් දුර */
         color: blue;     /* අකුරු වල පාට */
         font-size: 1.2rem; /* අකුරු වල විශාලත්වය */
     }
     
     #para2 { 
-        top: 250px;      /* උඩ ඉඳන් දුර */
-        left: 150px; 
+        top: 450px;      /* උඩ ඉඳන් දුර */
+        left: 200px; 
         color: green; 
         font-size: 1.1rem; 
     }
     
     #para3 { 
-        bottom: 100px;   /* යට ඉඳන් දුර */
-        right: 50px;     /* දකුණේ ඉඳන් දුර */
+        top: 600px;   /* උඩ ඉඳන් දුර */
+        left: 200px;     /* වමේ ඉඳන් දුර */
         color: red; 
         font-size: 1.3rem; 
     }
@@ -622,6 +622,4 @@ body {
         margin: 10px auto;
     }
 }
-
-
 
