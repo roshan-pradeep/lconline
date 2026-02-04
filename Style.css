@@ -65,7 +65,7 @@ body {
 .hero-content p {
     position: absolute;
   top: 30%;   /* Udadi idan 20% k pahalata */
-  left: 30%;  /* Wam patthe idan 10% k dakunata */
+  left: 50%;  /* Wam patthe idan 10% k dakunata */
   /* Oyata ona ganan dila balance karaganna */
   font-size: 1rem;         /* Akuru size eka */
   line-height: 1.6;          /* Pelawal athara ida (pahasuwen kiyawanna) */
@@ -701,3 +701,4 @@ h1, .custom-p {
         width: auto;      /* Button එකේ පළල අකුරු අනුව හැදෙයි */
         display: inline-block;
     }
+
