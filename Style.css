@@ -669,8 +669,9 @@ h1, .custom-p {
 
     /* --- ABOUT PAGE (Mobile) --- */
     .about-page h1 {
-        top: 20px;
+        top: 140px;
         font-size: 22px;
+        color: #aaa;
     }
     .about-page #para1 { top: 320px; font-size: 14px; color: #63cc0d; }
     .about-page #para2 { top: 600px; font-size: 14px; color: #ee0c0c; }
@@ -698,4 +699,5 @@ h1, .custom-p {
         display: inline-block;
 
     }
+
 
