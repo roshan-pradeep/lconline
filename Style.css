@@ -186,7 +186,10 @@ body {
   }
 
   .hero-section {
-    
+position: relative;  /* ඇතුළේ තියෙන දේවල් මේකට සාපේක්ෂව පාලනය කරයි */
+    width: 100%;         /* මුළු screen එකේම පළල ගනී */
+    height: 40vh;        /* screen එකේ උසින් 80% ක් උස ලබා දෙයි */
+    min-height: 200px;   /* අඩුම උස 400px ලෙස තබයි */
     padding: 20px;         /* Mulu section ekema ida poddak adu kara */
      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/IMG/web-\ background1\ \(1\).jpg'); /* පින්තූරය උඩින් කළු පාට ලේයර් එකක් දමයි */
   }
@@ -674,8 +677,8 @@ h1, .custom-p {
         color: #aaa;
     }
     .about-page #para1 { top: 320px; font-size: 14px; color: #63cc0d; }
-    .about-page #para2 { top: 600px; font-size: 14px; color: #ee0c0c; }
-    .about-page #para3 { top: 720px; font-size: 14px; color: #310cb6; }
+    .about-page #para2 { top: 500px; font-size: 14px; color: #ee0c0c; }
+    .about-page #para3 { top: 620px; font-size: 14px; color: #310cb6; }
 
 
 
@@ -697,7 +700,4 @@ h1, .custom-p {
         z-index: 10;
         width: auto;      /* Button එකේ පළල අකුරු අනුව හැදෙයි */
         display: inline-block;
-
     }
-
-
