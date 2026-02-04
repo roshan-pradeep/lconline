@@ -92,7 +92,7 @@ function sendToWhatsApp() {
     const service = document.getElementById("userService").value; // තෝරාගත් සේවාව ලබා ගනී
     const message = document.getElementById("userMessage").value; // පණිවිඩය ලබා ගනී
 
-    const myNumber = "94771234567"; // **මෙතනට ඔයාගේ WhatsApp අංකය දාන්න** (94 සමඟ)
+    const myNumber = "94711462838"; // **මෙතනට ඔයාගේ WhatsApp අංකය දාන්න** (94 සමඟ)
 
     // අත්‍යවශ්‍ය දත්ත පුරවා ඇත්දැයි පරීක්ෂා කිරීම
     if (name === "" || phone === "" || service === "") {
@@ -111,4 +111,5 @@ function sendToWhatsApp() {
     window.open(url, '_blank').focus(); // WhatsApp අලුත් Tab එකක විවෘත කරයි
     closeForm(); // පෝරමය වසා දමයි
 }
+
 
