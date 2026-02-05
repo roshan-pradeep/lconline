@@ -649,11 +649,13 @@ h1, .custom-p {
 
     /* --- ABOUT PAGE (Desktop) --- */
     .about-page h1 {
-        top: 60px;
+        top: 100px;
         font-size: 3rem;
         color: #f1f1f1;
     }
-    .about-page #para1 { top: 200px; color: #333; font-size: 1.2rem; }
+    .about-page #para1 { top: 300px; color: #1b1a1a; font-size: 1.2rem; }
+    .about-page #para2 { top: 420px; color: #da1e1e; font-size: 1.2rem; }
+    .about-page #para3 { top: 550px; color: #eb11b4; font-size: 1.2rem; }
     /* තව පේජ් තියෙනවා නම් මෙතනට පල්ලෙහාට ලියාගෙන යන්න */
 }
 
