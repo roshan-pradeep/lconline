@@ -693,7 +693,16 @@ h1, .custom-p {
     .about1-page #para2 { top: 630px; font-size: 14px; color: #ee0c0c; }
     .about1-page #para3 { top: 800px; font-size: 14px; color: #310cb6; }
 
-
+    
+    /* --- dtv PAGE (Mobile) --- */
+    .dtv-page h1 {
+        top: 200px;
+        font-size: 25px;
+        color: #e9e7e7;
+    }
+    .dtv-page #para1 { top: 400px; font-size: 14px; color: #63cc0d; }
+    .dtv-page #para2 { top: 580px; font-size: 14px; color: #ee0c0c; }
+    .dtv-page #para3 { top: 670px; font-size: 14px; color: #310cb6; }
 
 
 }
