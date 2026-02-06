@@ -700,9 +700,9 @@ h1, .custom-p {
         font-size: 25px;
         color: #e9e7e7;
     }
-    .dtv-page #para1 { top: 400px; left:290px; font-size: 14px; color: #63cc0d; }
-    .dtv-page #para2 { top: 580px; font-size: 14px; color: #ee0c0c; }
-    .dtv-page #para3 { top: 670px; font-size: 14px; color: #310cb6; }
+    .dtv-page #para1 { top: 400px; left:285px; font-size: 14px; color: #63cc0d; }
+    .dtv-page #para2 { top: 620px; font-size: 14px; color: #ee0c0c; }
+    .dtv-page #para3 { top: 700px; font-size: 14px; color: #310cb6; }
 
 
 }
