@@ -65,6 +65,65 @@
 
 
 
+<style>
+        /* Menna methanata thamayi anith card eka 2 ekaCSS tika enne */
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: sans-serif;
+        }
+
+        /* Meka Desktop ekata (Loku screen wala penna) */
+        .product-card2 {
+            background: white;
+            width: 300px;
+            /* Anith CSS tika... */
+        }
+
+       @media (max-width: 600px) {
+    .product-card2 {
+        position: relative; 
+        z-index: 100; 
+              
+        
+        margin-top: -160px;
+        margin-left: 50%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 45%;         /* Screen eken 45% k gannawa */
+        height: 15%;
+        padding: 10px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card2 h2 {
+        font-size: 16px; 
+    }
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card2 img {
+        width: 100%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+        margin-top: -20px;
+
+    }
+    .price-tag2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: -30%;
+}
+}
+    </style>
+
+
+
+
+
+
 
     </head>
 
@@ -134,6 +193,24 @@
   
   <div class="price-tag">Rs. 9990.00</div>
 </div>
+
+
+
+<!-- dewani (2)product card kotuwak athule liyana eka -->
+
+<div class="product-card2">
+  <h2 class="card-heading2">Monthly Packege Price</h2>
+  
+  <div class="card-body2">
+    <!-- <img src="assets/IMG/DTV.png" alt="Dialog Router" class="product-img"> -->
+    
+    
+  </div>
+  
+  <div class="price-tag2">Rs. 798.00</div>
+</div>
+
+
 
 
 
