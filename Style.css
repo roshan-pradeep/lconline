@@ -869,7 +869,7 @@ h1, .custom-p {
 }
 
 
- /* prduct card kotuwak athule deyak liyana widiya */
+ /* HBB Page kotuwak athule deyak liyana widiya */
 
     .product-card2 {
     width: 100px;
@@ -921,7 +921,7 @@ h1, .custom-p {
     color: #e70f0f;
     border-top: 1px solid #eee;
     padding-top: 15px;
-     margin-top: -5%;
+     margin-top: -30%;
 }
 
 .product-img2 {
@@ -980,6 +980,494 @@ h1, .custom-p {
 
     /* Image eka card ekata fit wenna hadamu */
     .product-card2 img {
+        width: 100%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+    }
+}
+
+/* Hbb 10GB Data prduct card kotuwak athule deyak liyana widiya */
+
+    .product-card3 {
+    width: 100px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.title3 {
+    color: #d32f2f; /* Dialog red/pink pata */
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.content-wrapper3 {
+    display: flex; /* Image ekai icons ui paththa paththata ganna */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.router-img3 {
+    width: 350px; /* Router image eke size eka */
+}
+
+.icon-list3 {
+    display: flex;
+    flex-direction: column; /* Icon peliya yata yatata ganna */
+    gap: 15px; /* Icon athara ida */
+}
+
+.icon-item3 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%; /* Roud karanna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.price-tag3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+     margin-top: -30%;
+}
+
+.product-img3 {
+    width: 100px;       /* Photo eke size eka */
+    height: auto;
+    object-fit: contain;
+}
+
+.card-body3 {
+    display: flex;      /* Image ekai icons ui paththa paththata ganna */
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.icon-group3 {
+    display: flex;
+    flex-direction: column; /* Icon yata yatata danna */
+    gap: 10px;
+}
+
+.icon-circle3 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .product-card3 {
+        position: relative; 
+        z-index: 100;   
+        padding-top: 15px;    /* Udin ida adu kara */
+        padding-bottom: 15px; /* Yatin ida adu kara */    
+        
+        margin-top: -300px;
+        margin-left: -20%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 50%;         /* Screen eken 45% k gannawa */
+        padding: 5px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card3 h2 {
+        font-size: 16px; 
+        margin-bottom: 5px;  /* Heading ekata yatin thiyena ida adu kara */
+    }
+ /* Card eka podi weddi heading ekath podi karamu */
+    .product-card3 h3 {
+        font-size: 16px; 
+        margin-bottom: 5px;  /* Heading ekata yatin thiyena ida adu kara */
+    }
+
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card3 img {
+        width: 100%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+    }
+}
+
+/* Hbb 30GB Data prduct card kotuwak athule deyak liyana widiya */
+
+    .product-card4 {
+    width: 100px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.title4 {
+    color: #d32f2f; /* Dialog red/pink pata */
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.content-wrapper4 {
+    display: flex; /* Image ekai icons ui paththa paththata ganna */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.router-img4 {
+    width: 350px; /* Router image eke size eka */
+}
+
+.icon-list4 {
+    display: flex;
+    flex-direction: column; /* Icon peliya yata yatata ganna */
+    gap: 15px; /* Icon athara ida */
+}
+
+.icon-item4 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%; /* Roud karanna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.price-tag4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+     margin-top: -30%;
+}
+
+.product-img4 {
+    width: 100px;       /* Photo eke size eka */
+    height: auto;
+    object-fit: contain;
+}
+
+.card-body4 {
+    display: flex;      /* Image ekai icons ui paththa paththata ganna */
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.icon-group4 {
+    display: flex;
+    flex-direction: column; /* Icon yata yatata danna */
+    gap: 10px;
+}
+
+.icon-circle4 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .product-card4 {
+        position: relative; 
+        z-index: 100;   
+        padding-top: 15px;    /* Udin ida adu kara */
+        padding-bottom: 15px; /* Yatin ida adu kara */    
+        
+        margin-top: -300px;
+        margin-left: -20%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 50%;         /* Screen eken 45% k gannawa */
+        padding: 5px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card4 h2 {
+        font-size: 16px; 
+        margin-bottom: 5px;  /* Heading ekata yatin thiyena ida adu kara */
+    }
+ /* Card eka podi weddi heading ekath podi karamu */
+    .product-card4 h3 {
+        font-size: 16px; 
+        margin-bottom: 5px;  /* Heading ekata yatin thiyena ida adu kara */
+    }
+
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card4 img {
+        width: 100%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+    }
+}
+
+/* Hbb 45GB Data prduct card kotuwak athule deyak liyana widiya */
+
+    .product-card5 {
+    width: 100px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.title5 {
+    color: #d32f2f; /* Dialog red/pink pata */
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.content-wrapper5 {
+    display: flex; /* Image ekai icons ui paththa paththata ganna */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.router-img5 {
+    width: 350px; /* Router image eke size eka */
+}
+
+.icon-list5 {
+    display: flex;
+    flex-direction: column; /* Icon peliya yata yatata ganna */
+    gap: 15px; /* Icon athara ida */
+}
+
+.icon-item5 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%; /* Roud karanna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.price-tag5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+     margin-top: -30%;
+}
+
+.product-img5 {
+    width: 100px;       /* Photo eke size eka */
+    height: auto;
+    object-fit: contain;
+}
+
+.card-body5 {
+    display: flex;      /* Image ekai icons ui paththa paththata ganna */
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.icon-group5 {
+    display: flex;
+    flex-direction: column; /* Icon yata yatata danna */
+    gap: 10px;
+}
+
+.icon-circle5 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .product-card5 {
+        position: relative; 
+        z-index: 100;   
+        padding-top: 15px;    /* Udin ida adu kara */
+        padding-bottom: 15px; /* Yatin ida adu kara */    
+        
+        margin-top: -300px;
+        margin-left: -20%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 50%;         /* Screen eken 45% k gannawa */
+        padding: 5px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card5 h2 {
+        font-size: 16px; 
+        margin-bottom: 5px;  /* Heading ekata yatin thiyena ida adu kara */
+    }
+ /* Card eka podi weddi heading ekath podi karamu */
+    .product-card5 h3 {
+        font-size: 16px; 
+        margin-bottom: 5px;  /* Heading ekata yatin thiyena ida adu kara */
+    }
+
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card5 img {
+        width: 100%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+    }
+}
+
+/* Hbb 70GB Data prduct card kotuwak athule deyak liyana widiya */
+
+    .product-card6 {
+    width: 100px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.title6 {
+    color: #d32f2f; /* Dialog red/pink pata */
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.content-wrapper6 {
+    display: flex; /* Image ekai icons ui paththa paththata ganna */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.router-img6 {
+    width: 350px; /* Router image eke size eka */
+}
+
+.icon-list6 {
+    display: flex;
+    flex-direction: column; /* Icon peliya yata yatata ganna */
+    gap: 15px; /* Icon athara ida */
+}
+
+.icon-item6 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%; /* Roud karanna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.price-tag6 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+     margin-top: -30%;
+}
+
+.product-img6 {
+    width: 100px;       /* Photo eke size eka */
+    height: auto;
+    object-fit: contain;
+}
+
+.card-body6 {
+    display: flex;      /* Image ekai icons ui paththa paththata ganna */
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.icon-group6 {
+    display: flex;
+    flex-direction: column; /* Icon yata yatata danna */
+    gap: 10px;
+}
+
+.icon-circle6 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .product-card6 {
+        position: relative; 
+        z-index: 100;   
+        padding-top: 15px;    /* Udin ida adu kara */
+        padding-bottom: 15px; /* Yatin ida adu kara */    
+        
+        margin-top: -300px;
+        margin-left: -20%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 50%;         /* Screen eken 45% k gannawa */
+        padding: 5px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card6 h2 {
+        font-size: 16px; 
+        margin-bottom: 5px;  /* Heading ekata yatin thiyena ida adu kara */
+    }
+ /* Card eka podi weddi heading ekath podi karamu */
+    .product-card6 h3 {
+        font-size: 16px; 
+        margin-bottom: 5px;  /* Heading ekata yatin thiyena ida adu kara */
+    }
+
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card6 img {
         width: 100%;       /* Box eke size ekata auto adjust wenna */
         height: auto;
     }
