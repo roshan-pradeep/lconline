@@ -700,7 +700,7 @@ h1, .custom-p {
         font-size: 25px;
         color: #e9e7e7;
     }
-    .dtv-page #para1 { top: 500px; left:200px; font-size: 14px; color: #63cc0d; }
+    .dtv-page #para1 { top: 500px; left:150px; font-size: 14px; color: #63cc0d; }
     .dtv-page #para2 { top: 800px; font-size: 14px; color: #ee0c0c; }
     .dtv-page #para3 { top: 900px; font-size: 14px; color: #310cb6; }
 
@@ -728,7 +728,7 @@ h1, .custom-p {
     /* prduct card kotuwak athule deyak liyana widiya */
 
     .product-card {
-    width: 200px;
+    width: 100px;
     background: #fff;
     border-radius: 15px;
     padding: 10px;
@@ -771,16 +771,16 @@ h1, .custom-p {
     color: #666;
 }
 
-.price {
-    font-size: 50px;
+.price-tag {
+    font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #e70f0f;
     border-top: 1px solid #eee;
     padding-top: 15px;
 }
 
 .product-img {
-    width: 150px;       /* Photo eke size eka */
+    width: 100px;       /* Photo eke size eka */
     height: auto;
     object-fit: contain;
 }
