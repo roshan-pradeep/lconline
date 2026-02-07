@@ -715,9 +715,9 @@ h1, .custom-p {
         font-size: 25px;
         color: #e9e7e7;
     }
-    .hbb-page #para1 { top: 450px; left:170px; font-size: 14px; color: #63cc0d; }
+    .hbb-page #para1 { top: 500px; left:170px; font-size: 14px; color: #63cc0d; }
     .hbb-page #para2 { top: 550px; font-size: 14px; color: #ee0c0c; }
-    .hbb-page #para3 { top: 600px; font-size: 14px; color: #310cb6; }
+    .hbb-page #para3 { top: 650px; font-size: 14px; color: #310cb6; }
 
 }
 
