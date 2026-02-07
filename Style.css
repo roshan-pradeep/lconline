@@ -507,7 +507,7 @@ position: relative;  /* ඇතුළේ තියෙන දේවල් මේ�
     }
 
     .nav-logo {
-        height: 40px; /* Mobile eke logo eka poddak podi kara */
+        height: 70px; /* Mobile eke logo eka poddak podi kara */
     }
 
     /* Links tika row ekaka thiyenna hira wenawa nam, ekak yata ekak danna */
@@ -530,7 +530,7 @@ position: relative;  /* ඇතුළේ තියෙන දේවල් මේ�
 
 /* Logo image eke size eka palanaya karanna */
 .nav-logo {
-    height: 50px;    /* Oyata ona height ekak danna (40px-60px athara hodayi) */
+    height: 70px;    /* Oyata ona height ekak danna (40px-60px athara hodayi) */
     width: auto;     /* Height ekata anuwa width eka auto hadenawa */
     display: block;
     transition: transform 0.3s ease;
