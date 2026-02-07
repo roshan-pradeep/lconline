@@ -552,15 +552,16 @@ position: relative;  /* ඇතුළේ තියෙන දේවල් මේ�
 
 /* ඕනෑම තැනක පාවිච්චි කළ හැකි Gallery Style එක */
 /* පින්තූර වල පොදු පෙනුම */
-.movable-photo {
-    width: 300px;
-    height: 300px;
+.movable-photo1 {
+    width: 500px;
+    height: 500px;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
     position: absolute;
     transition: 0.3s;
-    z-index: 5;
+    z-index: 100;
+    margin-top: -20%;
 }
 
 /* --- Desktop/Laptop සඳහා Positions --- */
