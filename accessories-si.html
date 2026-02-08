@@ -228,10 +228,65 @@
 }
     </style>
 
+<style>
+        /* Wire Role Product Card */
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: sans-serif;
+        }
+
+        /* Meka Desktop ekata (Loku screen wala penna) */
+        .product-card11 {
+            background: white;
+            width: 300px;
+            /* Anith CSS tika... */
+        }
+
+       @media (max-width: 600px) {
+    .product-card11 {
+        position: relative; 
+        z-index: 100; 
+              
+        
+        margin-top: 20px;
+        margin-left: 5%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 45%;         /* Screen eken 45% k gannawa */
+        height: 35%;
+        padding: 10px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card11 h2 {
+        font-size: 25px; 
+    }
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card11 img{
+        width: 80%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+        margin-top: -25px;
+        margin-left: 5PX;
+
+    }
+    .price-tag11 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: -20%;
+}
+}
+    </style>
+
     </head>
 
 
-    <body>
+    <body class="accessories-page">
          <!-- nav eka aluthin with logo-->
 
     <nav class="main-nav">
@@ -276,10 +331,13 @@
 <div class="content-container">
     <h1 class="main-title">  </h1>
 
-    <!--<p class="custom-p" id="para1">මේක පළවෙනි paragraph එකයි.</p>-->
+    <p class="custom-p" id="para1">මෙම සියලුම අමතර කොටස් ඔබගේ නිවසටම ගෙන්වා ගැනීමට අපට whatsapp ඇමතුමක් ලබාදෙන්න.</p>
     <!--<p class="custom-p" id="para2">මේක දෙවෙනි paragraph එකයි.</p>-->
    <!-- <p class="custom-p" id="para3">මේක තුන්වෙනි paragraph එකයි.</p>-->
 </di>
+
+
+
 
 <!-- LNB product card kotuwak athule liyana eka -->
 
@@ -292,7 +350,7 @@
     
   </div>
   
-  <div class="price-tag7">Rs. 1200.00</div>
+  <div class="price-tag7">Rs. 990.00</div>
 </div>
 
 
@@ -308,7 +366,7 @@
     
   </div>
   
-  <div class="price-tag8">Rs. 800.00</div>
+  <div class="price-tag8">Rs. 850.00</div>
 </div>
 
 
@@ -323,7 +381,7 @@
     
   </div>
   
-  <div class="price-tag9">Rs. 850.00</div>
+  <div class="price-tag9">Rs. 950.00</div>
 </div>
 
 
@@ -341,6 +399,20 @@
   <div class="price-tag10">Rs. 5990.00</div>
 </div>
 
+
+<!-- Wire ROle product card kotuwak athule liyana eka -->
+
+<div class="product-card11">
+  <h2 class="card-heading11"> DTV Wire Role </h2>
+  
+  <div class="card-body11">
+    <img src="assets/IMG/dtvwire.png" alt="Dialog Router" class="product-img11">
+    
+    
+  </div>
+  
+  <div class="price-tag11">Rs. 1500.00</div>
+</div>
 
 
 
