@@ -194,7 +194,7 @@ position: relative;  /* ඇතුළේ තියෙන දේවල් මේ�
     height: 30vh;        /* screen එකේ උසින් 80% ක් උස ලබා දෙයි */
     min-height: 200px;   /* අඩුම උස 400px ලෙස තබයි */
     padding: 20px;         /* Mulu section ekema ida poddak adu kara */
-     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../lconline/assets/IMG/web-\ background1\ .jpg'); /* පින්තූරය උඩින් කළු පාට ලේයර් එකක් දමයි */
+     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../lconline/assets/IMG/web-\ background2\ .jpg'); /* පින්තූරය උඩින් කළු පාට ලේයර් එකක් දමයි */
   }
 
 
