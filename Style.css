@@ -719,6 +719,17 @@ h1, .custom-p {
     .hbb-page #para2 { top: 580px; font-size: 14px; color: #ee0c0c; }
     .hbb-page #para3 { top: 900px; font-size: 14px; color: #310cb6; }
 
+/* --- accessories (Mobile) --- */
+    .accessories-page h1 {
+        top: 200px;
+        font-size: 25px;
+        color: #e9e7e7;
+    }
+    .accessories-page #para1 { top: 1000px; left:150px; font-size: 20px; color: #111010; }
+    .accessories-page #para2 { top: 580px; font-size: 14px; color: #ee0c0c; }
+    .accessories-page #para3 { top: 900px; font-size: 14px; color: #310cb6; }
+
+
 }
 
 
@@ -1945,6 +1956,125 @@ h1, .custom-p {
 
     /* Image eka card ekata fit wenna hadamu */
     .product-card10 img {
+        width: 100%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+    }
+}
+
+/*Wire Role  prduct card kotuwak athule deyak liyana widiya */
+
+    .product-card11 {
+    width: 100px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.title11 {
+    color: #d32f2f; /* Dialog red/pink pata */
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.content-wrapper11 {
+    display: flex; /* Image ekai icons ui paththa paththata ganna */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.router-img11 {
+    width: 350px; /* Router image eke size eka */
+}
+
+.icon-list11 {
+    display: flex;
+    flex-direction: column; /* Icon peliya yata yatata ganna */
+    gap: 15px; /* Icon athara ida */
+}
+
+.icon-item11 {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%; /* Roud karanna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.price-tag11 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+     margin-top: -30%;
+}
+
+.product-img11 {
+    width: 100px;       /* Photo eke size eka */
+    height: auto;
+    object-fit: contain;
+}
+
+.card-body11 {
+    display: flex;      /* Image ekai icons ui paththa paththata ganna */
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.icon-group11 {
+    display: flex;
+    flex-direction: column; /* Icon yata yatata danna */
+    gap: 10px;
+}
+
+.icon-circle11 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .product-card11 {
+        position: relative; 
+        z-index: 100;   
+        padding-top: 15px;    /* Udin ida adu kara */
+        padding-bottom: 15px; /* Yatin ida adu kara */    
+        
+        margin-top: -300px;
+        margin-left: -20%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 50%;         /* Screen eken 45% k gannawa */
+        padding: 5px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card11 h2 {
+        font-size: 16px; 
+        margin-bottom: 5px;  /* Heading ekata yatin thiyena ida adu kara */
+    }
+ /* Card eka podi weddi heading ekath podi karamu */
+    .product-card11 h3 {
+        font-size: 16px; 
+        margin-bottom: 5px;  /* Heading ekata yatin thiyena ida adu kara */
+    }
+
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card11 img {
         width: 100%;       /* Box eke size ekata auto adjust wenna */
         height: auto;
     }
