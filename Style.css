@@ -742,6 +742,18 @@ h1, .custom-p {
     .accessories-page #para3 { top: 900px; font-size: 14px; color: #310cb6; }
 
 
+  
+/* --- outdoor unit (Mobile) --- */
+    .outdoorunit-page h1 {
+        top: 200px;
+        font-size: 25px;
+        color: #e9e7e7;
+    }
+    .outdoorunit-page #para1 { top: 505px; left:170px; font-size: 14px; color: #111010; }
+    .outdoorunit-page #para2 { top: 580px; font-size: 16px; color: #ee0c0c; }
+    .outdoorunit-page #para3 { top: 820px; font-size: 14px; color: #310cb6; }
+  
+
 }
 
 

@@ -7,15 +7,192 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
         <title> Outdoor Unit  </title>
+        <style>
+        /* Menna methanata thamayi CSS tika enne */
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: sans-serif;
+        }
+
+        /* Meka Desktop ekata (Loku screen wala penna) */
+        .product-card {
+            background: white;
+            width: 300px;
+            /* Anith CSS tika... */
+        }
+
+       @media (max-width: 600px) {
+    .product-card {
+        position: relative; 
+        z-index: 100; 
+              
+        
+        margin-top: -80px;
+        margin-left: 23%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 55%;         /* Screen eken 45% k gannawa */
+        height: 35%;
+        padding: 10px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card h2 {
+        font-size: 16px; 
+    }
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card img {
+        width: 100%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+        margin-top: -20px;
+
+    }
+    .price-tag {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: -23%;
+}
+}
+    </style>
+
+
+<style>
+        /* WITHOUT SIM*/
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: sans-serif;
+        }
+
+        /* Meka Desktop ekata (Loku screen wala penna) */
+        .product-card10 {
+            background: white;
+            width: 300px;
+            /* Anith CSS tika... */
+        }
+
+       @media (max-width: 600px) {
+    .product-card10 {
+        position: relative; 
+        z-index: 100; 
+              
+        
+        margin-top: 200px;
+        margin-left: 2%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 45%;         /* Screen eken 45% k gannawa */
+        height: 15%;
+        padding: 10px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card10 h2 {
+        font-size: 20px; 
+    }
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card10 h3 {
+        font-size: 20px; 
+    }
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card10 img {
+        width: 100%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+        margin-top: -20px;
+
+    }
+    .price-tag10 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 2%;
+}
+
+
+}
+    </style>
+
+
+<style>
+        /* WITH SIM*/
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: sans-serif;
+        }
+
+        /* Meka Desktop ekata (Loku screen wala penna) */
+        .product-card11 {
+            background: white;
+            width: 300px;
+            /* Anith CSS tika... */
+        }
+
+       @media (max-width: 600px) {
+    .product-card11 {
+        position: relative; 
+        z-index: 100; 
+              
+        
+        margin-top: -95px;
+        margin-left: 50%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 45%;         /* Screen eken 45% k gannawa */
+        height: 15%;
+        padding: 10px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card11 h2 {
+        font-size: 20px; 
+    }
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card11 h3 {
+        font-size: 20px; 
+    }
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card11 img {
+        width: 100%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+        margin-top: -20px;
+
+    }
+    .price-tag11 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 2%;
+}
+
+
+}
+    </style>
+
+
     </head>
-    <body>
+    <body class="outdoorunit-page">
        
         <!-- nav eka aluthin with logo-->
 
     <nav class="main-nav">
     <div class="logo">
         <a href="index.html">
-            <img src="my-logo.png" alt="LC Online Logo" class="nav-logo">
+            <img src="assets/IMG/lc online logo.jpg" alt="LC Online Logo" class="nav-logo">
         </a>
     </div>
     <ul class="nav-links">
@@ -32,7 +209,7 @@
 
         <!-- <kamathi thanakata daganna photo--> 
 
-<img src="assets/IMG/outdoor.png" class="movable-photo" id="photo1">
+<!--<img src="assets/IMG/Dialog-HomeBrodband.jpeg" class="movable-photo" id="photo1">-->
 <!-- <img src="img2.jpg" class="movable-photo" id="photo2"> -->
 <!-- <img src="img3.jpg" class="movable-photo" id="photo3"> -->
 <!-- <img src="img4.jpg" class="movable-photo" id="photo4"> -->
@@ -53,12 +230,65 @@
 <!-- kamathi widihata h1, para thanata damima -->
 
 <div class="content-container">
-    <h1 class="main-title"> Outdoor Unit</h1>
+    <h1 class="main-title"> </h1>
 
-    <p class="custom-p" id="para1">මේක පළවෙනි paragraph එකයි.</p>
-    <p class="custom-p" id="para2">මේක දෙවෙනි paragraph එකයි.</p>
-    <p class="custom-p" id="para3">මේක තුන්වෙනි paragraph එකයි.</p>
+    <p class="custom-p" id="para1">LC Online හරහා දැන් ඔබට 4G ආවරණය අඩු ස්ථාන සදහා 4G Outdoor Antenna අපගෙන් සවිකර ගත හැක. </p>
+    <p class="custom-p" id="para2">සවිකිරිමේ ගාස්තුව සමග 4G Outdoor Antenna මිල ගනන් පහත දක්වා ඇත.</p>
+    <p class="custom-p" id="para3">නිවසටම ගෙන්වා ගැනිමට අපට whatsapp  පණිවුඩයක් එවන්න
+</p>
 </di>
+
+
+
+<!-- product card kotuwak athule liyana eka -->
+
+<div class="product-card">
+  <h2 class="card-heading"> </h2>
+  
+  <div class="card-body">
+    <img src="assets/IMG/outdoor.jpg" alt="Dialog Router" class="product-img">
+    
+    
+  </div>
+  <div class="price-tag">4G Outdoor Unit</div>
+</div>
+  
+
+<!-- without sim product card kotuwak athule liyana eka -->
+
+<div class="product-card10">
+  <h2 class="card-heading3">සිම් රහිත</h2>
+ 
+  
+  
+  <div class="price-tag10">Rs. 12500</div>
+ 
+
+</div>
+
+
+<!-- with sim product card kotuwak athule liyana eka -->
+
+<div class="product-card11">
+  <h2 class="card-heading3">සිම් සහිත</h2>
+ 
+  
+  
+  <div class="price-tag11">Rs. 15500</div>
+ 
+
+</div>
+
+
+<!-- whatsapp button eka
+  -->
+    <a href="https://wa.me/94711462838" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat with us</span> </a>
+
+
+
+
 
 <script src="assets/JS/main.js"></script>
     </body>
