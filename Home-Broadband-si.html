@@ -311,6 +311,67 @@
 }
     </style>
 
+<style>
+        /* sim only*/
+       body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: sans-serif;
+        }
+
+        /* Meka Desktop ekata (Loku screen wala penna) */
+        .product-card7 {
+            background: white;
+            width: 300px;
+            /* Anith CSS tika... */
+        }
+
+       @media (max-width: 600px) {
+    .product-card7 {
+        position: relative; 
+        z-index: 100; 
+              
+        
+        margin-top: -97px;
+        margin-left: 50%;
+        
+        /* Card eka podi karanna methana wenas karanna */
+        width: 45%;         /* Screen eken 45% k gannawa */
+        height: 15%;
+        padding: 10px;      /* Athule ida poddak adu kara */
+    }
+
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card7 h2 {
+        font-size: 16px; 
+    }
+    /* Card eka podi weddi heading ekath podi karamu */
+    .product-card7 h3 {
+        font-size: 8px; 
+    }
+
+    /* Image eka card ekata fit wenna hadamu */
+    .product-card7 img {
+        width: 100%;       /* Box eke size ekata auto adjust wenna */
+        height: auto;
+        margin-top: -20px;
+
+    }
+    .price-tag7 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e70f0f;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: -40%;
+}
+
+
+}
+    </style>
+
+
 
     </head>
     <body class="hbb-page">
@@ -433,6 +494,8 @@
 
 
 
+
+
 <!-- data 70Gb product card kotuwak athule liyana eka -->
 
 <div class="product-card6">
@@ -448,6 +511,27 @@
  <div > <h3 class="card-heading6">30 Days Valid</h3>  </div>
 
 </div>
+
+
+<!-- sim only product card kotuwak athule liyana eka -->
+
+<div class="product-card7">
+  <h2 class="card-heading6">Sim Only</h2>
+ 
+  <div class="card-body7">
+    <!-- <img src="assets/IMG/DTV.png" alt="Dialog Router" class="product-img"> -->
+    
+    
+  </div>
+  
+  <div class="price-tag7">Rs. 2999.00</div>
+ 
+
+</div>
+
+
+
+
 
 
 
