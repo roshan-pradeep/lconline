@@ -346,7 +346,7 @@ body {
 
 .whatsapp-float {
     position: fixed;
-    bottom: 10px;      /* පල්ලෙහා ඉඳන් තියෙන දුර */
+    bottom: 20px;      /* පල්ලෙහා ඉඳන් තියෙන දුර */
     right: 20px;       /* දකුණු පැත්තේ ඉඳන් තියෙන දුර */
     background-color: #25d366; /* WhatsApp කොළ පාට */
     color: white;
